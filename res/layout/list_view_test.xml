@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="这是这是scrollview1以外的文字" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="button1" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="button2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="以下是ListView" >
+            </TextView>
+
+            <com.sun.shine.study.innerscrollview.view.InnerListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ff995599" >
+            </com.sun.shine.study.innerscrollview.view.InnerListView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="以上是listview" >
+            </TextView>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="button3" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="button4" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

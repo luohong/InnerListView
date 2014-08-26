@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="这是这是scrollview1以外的文字" />
+
+    <ScrollView
+        android:id="@+id/scroll_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="500dip"
+            android:background="#ff00ffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="这是scrollview1里的text" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="这是scrollview1里的text" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="这是scrollview1里的text" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:text="这是scrollview1里的text" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="300dip" >
+
+                <com.sun.shine.study.innerscrollview.view.InnerScrollView
+                    android:id="@+id/scroll_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dip" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/scoll_button1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="scroll2里的button1" />
+
+                        <Button
+                            android:id="@+id/scroll_button2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="scroll2里的button2" />
+
+                        <LinearLayout
+                            android:id="@+id/scroll_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="300dip"
+                            android:background="#ff0000ff"
+                            android:visibility="gone" >
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/scroll_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dip"
+                            android:text="scroll2里的button3" />
+
+                        <Button
+                            android:id="@+id/scroll_button4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dip"
+                            android:text="scroll2里的button4" />
+                    </LinearLayout>
+                </com.sun.shine.study.innerscrollview.view.InnerScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="scroll1里的文字" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="scroll1里的文字" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="scroll1里的文字" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="scroll1里的文字" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
